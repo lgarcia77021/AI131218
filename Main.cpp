@@ -4,14 +4,14 @@ using namespace std;
 
 int main() {
     
-string FN;
+string NAME;
     
     
 cout << " Hello, greetings. Please state your name " << endl;
 
-getline(cin,FN);
+getline(cin,NAME);
 
-cout << " Greetings " << FN << endl;
+cout << " Greetings " << NAME << endl;
  
  return 0;
  
