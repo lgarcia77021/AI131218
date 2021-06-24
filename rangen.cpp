@@ -1,24 +1,35 @@
 #include <iostream>
 #include <cstdio>     
 #include <cstdlib>   
-#include <ctime>       
+#include <ctime>    
 using namespace std;
 
-int RNG()
+int main()
 {
     
+    
     int RGX;
+
     
-    cout << " RNG online " << endl;
-    
-
-  srand (time(NULL));
+    srand (time(NULL));
 
 
-  RGX = rand() % 100000000;
+  RGX = rand() % 100000000 + 9999999;
   
-    cout << RGX << endl;
+cout << RGX << endl;
+
+while(RGX!=1 || 0)
+{
     
-    return 0;
+    int m = RGX % 2;
+    cout << " " << m << " ";
     
+    
+RGX = RGX / 2;
+
+
+cout << RGX << endl;
+
+}  
+return 0;
 }
