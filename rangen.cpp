@@ -9,8 +9,6 @@ int main()
     int RGX;
     srand (time(NULL));
     RGX = rand() % 100000000 + 9999999;
-  
-cout << RGX << endl;
 
 while(RGX!=1 || 0)
 {
