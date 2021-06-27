@@ -4,7 +4,7 @@
 #include <ctime>    
 using namespace std;
 
-int main()
+int RNG()
 {
     int RGX;
     srand (time(NULL));
