@@ -54,6 +54,8 @@ for(int i=8;i>=1;i--)
 }
 
 cout << " " << endl;
+    
+cout << " Random HEX code generated" << endl;
 
  RNG();
  
