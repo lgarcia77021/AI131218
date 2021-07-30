@@ -9,6 +9,7 @@ int RNG()
     int RGX;
     srand (time(NULL));
     RGX = rand() % 100000000 + 9999999;
+cout << "Random Generated One Time HEX #:" << endl;
 cout << std::hex << RGX << endl;
 while(RGX!=1 || 0)
 {
