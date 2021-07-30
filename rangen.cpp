@@ -1,24 +1,20 @@
 #include <iostream>
+#include <fstream>
 #include <cstdio>     
 #include <cstdlib>   
-#include <ctime>    
+#include <ctime>   
+#include <bitset>
 using namespace std;
 
-int RNG()
-{
-    int RGX;
+int RNG() {
     srand (time(NULL));
-    RGX = rand() % 100000000 + 9999999;
-cout << "Random Generated One Time HEX #:" << endl;
-cout << std::hex << RGX << endl;
-while(RGX!=1 || 0)
-{
-    
-    int m = RGX % 2;
-    cout << " " << m << " ";
-    RGX = RGX / 2;
-cout << RGX << endl;
+    int RGX = rand() % 100000000 + 9999999;
 
-}  
-return 0;
+    std::cout << "Random Generated One Time HEX #: \n";
+    std::cout << std::hex << RGX << "\n";
+    std::bitset<32> box(RGX);
+    for (int i=0;i<32;++i){
+        std::cout << box[i];
+    }
+ 
 }
